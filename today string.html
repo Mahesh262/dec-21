@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> weocome</h3>
+    <script>
+ 
+
+ function fact(x){
+     if (x===0){
+     return 1;
+
+     }
+    else {
+     return x* fact(x-1);
+   }
+   }
+     let num = 5;
+      let result = fact(num)
+    console.log(result);
+     
+  var less = [1,2,3] 
+  var high = [1,2,3,10];
+    let resut = red(high,less);
+   console.log(resut);
+    function red(n){
+      if(n.length === 0)
+      return 1;
+       else 
+      return n.shift() * red(n);
+    }
+
+/// repeating  numbers using recursion//
+//  console.log(ads(3,5));
+   console.log(ads(-2,6))
+  function ads(times, numbers){
+  if(times<=0)
+    return [];
+    else 
+    return [numbers].concat(ads(times-1, numbers));
+  }
+  function ads(times, numbers){
+  if(times<=0)
+    return [];
+    else 
+    return [numbers].concat(ads(times-1, numbers));
+  }
+  /// break////
+ function asr(n){
+   for (let i = 2; i<n ; i++){
+    if(n%i === 0)
+    return false;
+   }
+    return true;
+
+   }
+    console.log(asr(9));
+
+
+
+    </script>
+</body>
+</html>
